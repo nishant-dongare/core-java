@@ -12,7 +12,31 @@ public class ControlStatements {
 
 //		//SWITCH STATEMENT
 //		arithmaticSwitch();
-		gradeSwitch();
+//		gradeSwitch();
+		grade2MarksSwitch();
+	}
+
+	static void grade2MarksSwitch() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Marks : ");
+		int gd = sc.next().charAt(0);
+		sc.close();
+		switch (gd) {
+		case 'A':
+			System.out.println("Marks between 90 & 100");
+			break;
+		case 'B':
+			System.out.println("Marks between 80 & 90");
+			break;
+		case 'C':
+			System.out.println("Marks between 70 & 80");
+			break;
+		case 'D':
+			System.out.println("Marks between 70 & 60");
+			break;
+		default:
+			System.out.println("FAIL");
+		}
 	}
 
 	static void gradeSwitch() {
@@ -24,20 +48,17 @@ public class ControlStatements {
 		int pointer = marks / 10;
 		System.out.println(pointer);
 		switch (pointer) {
-		case 5:
-			System.out.println("D Grade ");
-			break;
 		case 6:
-			System.out.println("C Grade ");
+			System.out.println("Third Class");
 			break;
 		case 7:
-			System.out.println("B Grade ");
+			System.out.println("Second Class");
 			break;
 		case 8:
-			System.out.println("A Grade ");
+			System.out.println("First Class");
 			break;
 		case 9:
-			System.out.println("A++ Grade ");
+			System.out.println("First Class with Distinction");
 			break;
 		default:
 			System.out.println("FAIL");
