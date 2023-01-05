@@ -19,19 +19,19 @@ public class ControlStatements {
 	static void grade2MarksSwitch() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the Marks : ");
-		int gd = sc.next().charAt(0);
+		char gd = sc.next().charAt(0);
 		sc.close();
 		switch (gd) {
-		case 'A':
+		case 'a':
 			System.out.println("Marks between 90 & 100");
 			break;
-		case 'B':
+		case 'b':
 			System.out.println("Marks between 80 & 90");
 			break;
-		case 'C':
+		case 'c':
 			System.out.println("Marks between 70 & 80");
 			break;
-		case 'D':
+		case 'd':
 			System.out.println("Marks between 70 & 60");
 			break;
 		default:
