@@ -11,7 +11,37 @@ public class ControlStatements {
 //		signCheck();
 
 //		//SWITCH STATEMENT
-		arithmaticSwitch();
+//		arithmaticSwitch();
+		gradeSwitch();
+	}
+
+	static void gradeSwitch() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Marks : ");
+		int marks = sc.nextInt();
+		sc.close();
+
+		int pointer = marks / 10;
+		System.out.println(pointer);
+		switch (pointer) {
+		case 5:
+			System.out.println("D Grade ");
+			break;
+		case 6:
+			System.out.println("C Grade ");
+			break;
+		case 7:
+			System.out.println("B Grade ");
+			break;
+		case 8:
+			System.out.println("A Grade ");
+			break;
+		case 9:
+			System.out.println("A++ Grade ");
+			break;
+		default:
+			System.out.println("FAIL");
+		}
 	}
 
 	static void arithmaticSwitch() {
