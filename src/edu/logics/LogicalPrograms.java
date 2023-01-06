@@ -3,15 +3,29 @@ package edu.logics;
 public class LogicalPrograms {
 
 	public static void main(String[] args) {
-		sumOfAllDigits();
-		reverse();
-		stringReverse();
-		fibonacci();
-		factorial();
-		perfectSquare();
-		swapWithoutTemp();
-		perfectSquare();
+//		sumOfAllDigits();
+//		reverse();
+//		stringReverse();
+//		fibonacci();
+//		factorial();
+//		perfectSquare();
+//		swapWithoutTemp();
+//		perfectSquare();
+		armstrong();
 
+	}
+
+	static void armstrong() {
+		int num = 153, sum = 0, n = num, rem;
+		while (n != 0) {
+			rem = n % 10;
+			sum = sum + (rem * rem * rem);
+			n = n / 10;
+		}
+		if (num == sum)
+			System.out.println(num + " is Armstrong Number");
+		else
+			System.out.println(num + " is Not Armstrong Number");
 	}
 
 	private static void swapWithoutTemp() {
@@ -25,19 +39,23 @@ public class LogicalPrograms {
 	}
 
 	private static void perfectSquare() {
-		int sqr = 4;
-		int num = 0, n = sqr;
-		int i = 2;
-		while (num != 1) {
-			if (n % i == 0) {
-				n = sqr / i;
-				num += n;
-				i++;
-			}
-
+		int sqr = 16, num = sqr, len = 0;
+		for (len = 0; num > 0; len++) {
+			num = num / 10;
 		}
-		System.out.println(num);
+		System.out.println(len);
+		num = sqr;
 
+		while (len > 2) {
+			num /= 10;
+			len--;
+		}
+		int i = num;
+		while (num < sqr) {
+			num = i * i;
+			i--;
+		}
+		System.out.println(i);
 	}
 
 	private static void factorial() {
