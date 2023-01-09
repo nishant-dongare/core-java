@@ -6,14 +6,18 @@ public class InheritanceEx {
 
 	public static void main(String[] args) {
 
-		Substraction s = new Substraction();
+//		Substraction s = new Substraction();
 //		s.add();
 //		s.sub();
 //		System.out.println("Enter two numbers : ");
 //		s.add(100, 200);
 
-		s.add();
-		s.sub(s.a, s.b);
+		Divide d = new Divide();
+		d.getValues();
+		d.add();
+		d.sub();
+		d.multi();
+		d.div();
 
 //		Model m = new Model();
 //		m.car("SUV");
@@ -25,34 +29,40 @@ public class InheritanceEx {
 
 class Addition {
 	int a, b;
-	Scanner sc = new Scanner(System.in);
 
-	void add() {
+	void getValues() {
+		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter two numbers : ");
 		a = sc.nextInt();
 		b = sc.nextInt();
+		sc.close();
+	}
+
+	void add() {
 		System.out.println("Sum : " + (a + b));
 	}
 
-	void add(int a, int b) {
-		System.out.println("Sum : " + (a + b));
+//	void add(int a, int b) {
+//		System.out.println("Sum : " + (a + b));
+//	}
+}
+
+class Substraction extends Addition {
+	void sub() {
+		System.out.println("Sum : " + (a - b));
 	}
 
 }
 
-class Substraction extends Addition {
-	int a, b;
-	Scanner sc = new Scanner(System.in);
-
-	void sub() {
-		System.out.println("Enter two numbers : ");
-		a = sc.nextInt();
-		b = sc.nextInt();
-		System.out.println("Sum : " + (a - b));
+class Multiplication extends Substraction {
+	void multi() {
+		System.out.println("Multiplication : " + (a * b));
 	}
+}
 
-	void sub(int a, int b) {
-		System.out.println("Sum : " + (a - b));
+class Divide extends Multiplication {
+	void div() {
+		System.out.println("Divide : " + (a / b));
 	}
 }
 
