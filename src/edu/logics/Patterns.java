@@ -1,4 +1,4 @@
-package patterns;
+package edu.logics;
 
 import java.util.Scanner;
 
