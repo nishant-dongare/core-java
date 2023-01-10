@@ -6,6 +6,7 @@ public class TestStatic {
 		s1.showData();
 
 		Student s2 = new Student();
+		Student.b++;
 		s2.showData();
 	}
 }

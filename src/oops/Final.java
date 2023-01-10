@@ -14,15 +14,18 @@ public class Final extends Parent {
 	public static void main(String[] args) {
 		final int a = 10;
 //		a=20; // final variable cannot be assigned
-		Parent p = new Parent();
-		p.display();
-		p.show();
+		Final f = new Final();
+		f.display();
+		f.show();
+		System.out.println(Parent.value = 20);
 	}
 
 }
 
 //cannot Inherit if final
 class Parent {
+	static int value = 10;
+
 	final void display() {
 		System.out.println("Parent Class : display()");
 	}
