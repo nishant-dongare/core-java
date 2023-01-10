@@ -1,4 +1,4 @@
-package oops;
+package oops.Encapsulation;
 
 public class Student4GetSet {
 	private int rollno;
