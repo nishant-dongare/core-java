@@ -4,9 +4,9 @@ public class NullPointerException {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println(null);
+//			System.out.println(null);
 		} catch (Exception e) {
-			System.out.println(e);
+			System.out.println("NullPointer");
 		}
 	}
 

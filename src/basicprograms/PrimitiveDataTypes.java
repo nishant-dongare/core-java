@@ -1,4 +1,4 @@
-package edu;
+package basicprograms;
 
 public class PrimitiveDataTypes {
 	public static void main() {

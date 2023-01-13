@@ -1,4 +1,4 @@
-package edu.logics;
+package basicprograms.logics;
 
 public class LogicalPrograms {
 

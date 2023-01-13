@@ -1,4 +1,4 @@
-package edu;
+package basicprograms;
 
 //* are Mutable
 //String Builder AND String Buffer

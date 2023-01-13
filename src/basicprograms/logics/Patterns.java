@@ -1,4 +1,4 @@
-package edu.logics;
+package basicprograms.logics;
 
 import java.util.Scanner;
 

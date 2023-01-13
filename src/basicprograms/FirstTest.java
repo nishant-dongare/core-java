@@ -1,4 +1,4 @@
-package edu;
+package basicprograms;
 
 class Subject {
 	// Instance Variable
