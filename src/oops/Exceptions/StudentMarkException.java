@@ -29,5 +29,4 @@ public class StudentMarkException {
 			System.out.println(e);
 		}
 	}
-
 }
