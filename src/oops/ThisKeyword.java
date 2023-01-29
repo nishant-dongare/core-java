@@ -5,7 +5,6 @@ public class ThisKeyword {
 	String name;
 
 	ThisKeyword(String name) {
-		super();
 		this.name = name;
 	}
 
